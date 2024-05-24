@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family:sans-serif;
+    font-size: 15px;
+    
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background-color: whitesmoke;
+
+}
+h1{
+    text-align: center;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero{
+    background-color:  rgb(252, 112, 61);
+    width: 90vw;
+    padding: 20px;
+    height: 55vh;
+    margin: 0px auto;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.hero-img{
+    height:50vh;
+    max-width:70vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-left{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: space-around;
+
+}
+.plus{
+    color:white;
+    font-size: 50px;
+    cursor: pointer;
+}
+ion-icon{
+     color:rgb(3, 141, 255);
+     font-size: 40px;
+}
+h1{
+    
+    color: #fff;
+}
+.add-wrapper{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.close{
+    font-size: 30px;
+    cursor: pointer;
+    color:  rgb(250, 111, 61);
+}
+.habit-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+  
+   
+}
+label{
+  padding-bottom:5px;
+  
+}
+input,textarea{
+    width: 100%;
+    outline: none;
+    padding: 3px 10px;
+    
+}
+input:focus,textarea:focus{
+    outline: solid rgb(240, 162, 133) 1.5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.submitBtn,.update-streak{
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+    border:none;
+    color:rgb(27, 27, 27);
+    background-color:  rgb(250, 111, 61);
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    transition: .2s ease-in-out;
+}
+
+.submitBtn:hover,.update-streak:hover{
+   
+    background-color: rgb(236, 81, 25);
+   transition: .2s;
+   
+}
+
+h2{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+h3{
+    color: rgb(52, 51, 52);
+    margin-bottom: 10px;
+}
+p{
+    color: rgb(98, 98, 98);
+ 
+}
+
+.activities{
+ width: 70%;
+ display:flex;
+ gap: 10px;
+ margin: 10px auto;
+ padding: 10px;
+   
+}
+.update-streak{
+    display: none;
+}
+.habit{
+    height: 30vh;
+    width: 25vw;
+    text-align: center;
+    cursor: pointer;  
+    padding: 5px;
+    border: solid  rgb(254, 134, 91) 2px;
+    border-radius: 3px;
+}
+.habit:hover{
+    transform: translateY(-10px);
+    transition: .2s ease-in-out;
+    
+}
+/* Overlay style */
+.modal-overlay {
+    display: none; /* Initially hidden */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+/* Modal style */
+.modal-content {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Center the modal */
+    background: rgb(245, 247, 246); 
+    padding: 30px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001; /* Ensure it's above the overlay */
+    width: 300px;
+    max-width: 90%;
+}
+
+/* Close button style */
+.close {
+    cursor: pointer;
+    float: right;
+    font-size: 2rem;
+}
+
+/* Hide the plus button when the modal is displayed */
+.modal-overlay.show + .plus {
+    display: none;
+}
+
+
+
+@media screen  and (max-width:678px){
+    .main{
+        height: 100%;
+    }
+    .hero{
+        height: 45vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hero-left{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+    
+    }
+    .hero-img{
+        height:30vh;
+        max-width:70vw;
+       
+    }
+    .activities{
+        width: 100%;
+        display:flex;  
+        flex-wrap: wrap; 
+    }
+    .habit{
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    h1{
+        font-size: 18px;
+    } 
+}

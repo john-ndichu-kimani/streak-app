@@ -1,0 +1,12 @@
+{
+  "name": "my-typescript-project",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  }
+}

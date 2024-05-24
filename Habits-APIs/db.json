@@ -1,0 +1,28 @@
+{
+  "habits": [
+    {
+      "id": "6459",
+      "name": "walking",
+      "completeDate": "2024-05-15",
+      "habitNameIcon": "walk"
+    },
+    {
+      "id": "c6e9",
+      "name": "Eating",
+      "completeDate": "2024-05-08",
+      "habitNameIcon": "fast-food"
+    },
+    {
+      "id": "6551",
+      "name": "cycling",
+      "completeDate": "2024-05-17",
+      "habitNameIcon": "bicycle"
+    },
+    {
+      "id": "ab5a",
+      "name": "Travel",
+      "completeDate": "2024-05-15",
+      "habitNameIcon": "airplane"
+    }
+  ]
+}

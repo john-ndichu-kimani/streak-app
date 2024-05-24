@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="hero">
+            <div class="hero-left">
+            <div class="add-wrapper">
+                <ion-icon name="add-circle-outline" class="plus"></ion-icon>
+            </div>
+            <img src="/application/images/hero.png" alt="hero-image" class="hero-img">
+        </div>
+            <h1>Welcome To My Streak Counter</h1>
+        </div>
+        <h2>Activities</h2>
+        <div class="activities">
+            <!--Habits to be Added dynamically-->
+        </div>
+    </div>
+
+    <div class="modal-overlay myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="" class="habit-form">
+                <label for="name">Name
+                    <input type="text" id="name" autocomplete="off" required>
+                </label>
+                <label for="completed">Stop-Date
+                    <input type="date" id="complete-date" autocomplete="off" required>
+                </label>
+                <label for="habit-icon">IconName
+                    <input type="text" id="habit-icon" autocomplete="off" required>
+                </label>
+                <button class="submitBtn">Add Habit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/application/dist/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
